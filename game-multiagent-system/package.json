@@ -2,16 +2,15 @@
   "name": "game-multiagent-system",
   "version": "1.0.0",
   "description": "Multi-Agent Collaboration System for Web Game Development",
-  "type": "module",
-  "main": "src/orchestrator/orchestrator.js",
+  "main": "src/main.js",
   "scripts": {
     "dev": "node src/orchestrator/orchestrator.js",
     "start": "node src/main.js",
-    "test": "node tests/agent-tests.js",
-    "lint": "eslint src/"
+    "test": "node tests/agent-tests.cjs",
+    "lint": "eslint src/",
+    "demo": "node demo.mjs"
   },
   "dependencies": {
-    "opencode-sdk": "^1.0.0",
     "uuid": "^9.0.0",
     "dotenv": "^16.3.1"
   },
